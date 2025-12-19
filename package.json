@@ -1,7 +1,7 @@
 {
   "name": "image-measurer",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "homepage": "https://BB-69.github.io/my-react-vite-template",
   "scripts": {

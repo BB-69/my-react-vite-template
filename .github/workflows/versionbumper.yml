@@ -1,4 +1,4 @@
-name: Auto bump patch in PR branch
+name: Auto bump version in PR branch
 
 on:
   pull_request:
@@ -25,13 +25,13 @@ jobs:
         with:
           node-version: "18"
 
+      - name: Bump version
+        run: node .github/scripts/bump-version.js
+
       - name: Set Git Identity
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Bump patch version
-        run: npm version patch
 
       - name: Push changes back to PR branch
         run: |

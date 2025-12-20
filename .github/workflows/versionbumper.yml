@@ -26,6 +26,7 @@ jobs:
           node-version: "18"
 
       - name: Bump version
+        id: bump
         run: node .github/scripts/bump-version.js
 
       - name: Set Git Identity
@@ -35,4 +36,8 @@ jobs:
 
       - name: Push changes back to PR branch
         run: |
+          git pull origin ${{ github.head_ref }}
+          git add package.json
+          git add README.md
+          git commit -m "Version Update [ v${{ steps.bump.outputs.newVersion }} ]" || echo "No changes to commit"
           git push origin HEAD:${{ github.head_ref }}

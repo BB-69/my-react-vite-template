@@ -53,3 +53,5 @@ if (regex.test(readmeContent)) {
 
 fs.writeFileSync(readmePath, readmeContent, "utf8");
 console.log("✅ Updated version in README.md");
+
+fs.appendFileSync(process.env.GITHUB_OUTPUT, `newVersion=${newVersion}\n`);

@@ -31,7 +31,8 @@ const newSection = `${startMarker}\n${table}\n${endMarker}`;
 if (regex.test(readmeContent)) {
   readmeContent = readmeContent.replace(regex, newSection);
 } else {
-  readmeContent += `\n${newSection}\n`;
+  console.warn("⚠️ DEPENDENCIES markers not found, appending section");
+  readmeContent += `## DEPENDENCIES\n${newSection}\n`;
 }
 
 fs.writeFileSync(readmePath, readmeContent, "utf8");

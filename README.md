@@ -13,20 +13,20 @@ Template version:
 | react | ^19.2.4 |
 | react-dom | ^19.2.4 |
 | tailwindcss | ^4.2.1 |
-| @eslint/js | ^9.39.1 |
+| @eslint/js | ^10.0.1 |
 | @tailwindcss/vite | ^4.2.1 |
 | @types/node | ^25.5.0 |
 | @types/react | ^19.2.14 |
 | @types/react-dom | ^19.2.3 |
 | @vitejs/plugin-react-swc | ^4.3.0 |
-| eslint | ^9.39.1 |
+| eslint | ^10.0.3 |
 | eslint-plugin-react-hooks | ^7.0.1 |
 | eslint-plugin-react-refresh | ^0.5.2 |
 | gh-pages | ^6.3.0 |
 | globals | ^17.4.0 |
 | typescript | ~5.9.3 |
 | typescript-eslint | ^8.57.0 |
-| vite | ^7.2.4 |
+| vite | ^8.0.1 |
 <!-- DEPENDENCIES_END -->
 
 ## LICENSE
